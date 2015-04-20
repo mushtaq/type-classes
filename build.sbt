@@ -1,9 +1,8 @@
-name := "sample"
+name := "type-classes"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
-    "org.specs2" %% "specs2" % "2.3.10" % "test"
+  "com.typesafe.play" %% "play-json" % "2.3.4",
+  "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
 )
-
-transitiveClassifiers in Global := Seq(Artifact.SourceClassifier)
